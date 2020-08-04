@@ -1,4 +1,27 @@
-02/03/2019 Oleg Moskalenko <mom040267@gmail.com> Mihály Mészáros <misi@majd.eu>
+24/06/2020 Oleg Moskalenko <mom040267@gmail.com> Mihály Mészáros <misi@majd.eu>
+Version 4.5.2 'dan Eider':
+	- fix null pointer dereference in case of out of memory. (thanks to Thomas Moeller for the report)
+    - merge PR #517 (by wolmi)
+		* add prometheus metrics
+24/06/2020 Oleg Moskalenko <mom040267@gmail.com> Mihály Mészáros <misi@majd.eu>
+Version 4.5.1.3 'dan Eider':
+	- merge PR #575: (by osterik)
+		* fix rpm packaging
+	- merge PR #576: (by osterik)
+		* tell tar to not include the metadata into release
+	- merge PR #574: (by DevRockstarZ)
+		* change Docker turnserver.conf to latest turnserver.conf
+	- merge PR #566: (by bpcurse)
+		* Remove reference to SSLv3
+	- merge PR #579: (by islamoglus)
+		*Ignore MD5 for BoringSSL
+	- merge PR #577: (by osterik)
+		*build RPM from local folder instead of git repo
+	- Fix for CVE-2020-4067
+		* STUN response buffer not initialized properly
+		* The issue found and reported #583 by Felix Dörre all credits belongs to him.
+
+30/04/2020 Oleg Moskalenko <mom040267@gmail.com> Mihály Mészáros <misi@majd.eu>
 Version 4.5.1.2 'dan Eider':
 	- merge regression fix: (by Mathieu Brunot)
 		* Do not display empty CLI passwd alert if CLI is not enabled
@@ -51,6 +74,14 @@ Version 4.5.1.2 'dan Eider':
 	- merge PR #488 Fix typos about INSTALL filenames (by raccoonback)
 	- fix compiler warning comparison between signed and unsigned integer expressions
 	- fix compiler warning string truncation
+	- change Diffie Hellman default key length from 1066 to 2066
+	- merge PR #522 drop of supplementary group IDs (by weberhofer)
+	- merge PR #514 Unify spelling of Coturn (by paulmenzel)
+	- merge PR#506 Rename "prod" config option to "no-software-attribute" (by dbrgn)
+	- merge PR #519 fix config extension in README.docker (by ooookai)
+	- merge PR #516 change sql data dir in docker-compose-all.yml (by raghumuppa)
+	- merge PR #513 remove trailing spaces from READMEs (by paulmenzel)
+	- merge PR #525 add flags to disable periodic use of dynamic tables (by gfodor)
 
 02/03/2019 Oleg Moskalenko <mom040267@gmail.com> Mihály Mészáros <misi@majd.eu>
 Version 4.5.1.1 'dan Eider':
